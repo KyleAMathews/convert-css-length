@@ -12,7 +12,7 @@ you need support for more esoteric length units.
 var convertLength = require('convert-css-length');
 
 // Set the baseFontSize for your project. Defaults to 16px (also the
-browser default).
+// browser default).
 var convert = convertLength('21px');
 
 // Convert rem to px.
@@ -22,4 +22,11 @@ convert('1rem', 'px');
 // Convert px to em.
 convert('30px', 'em');
 // ---> 1.875em
+
+// Convert em to pixels using fromContext (1em is relative to the
+// font-size of its element so if using converting from em
+// (btw, rem is awesome and completely solves this problem) you need to
+// set the font-size of element you're converting from.).
+convert('1em', 'px', '14px')
+// ---> 14px
 ```
