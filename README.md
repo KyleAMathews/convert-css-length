@@ -19,14 +19,14 @@ var convert = convertLength('21px');
 
 // Convert rem to px.
 convert('1rem', 'px');
-// ---> 16px
+// ---> 21px
 
 // Convert px to em.
 convert('30px', 'em');
-// ---> 1.875em
+// ---> 1.42857em
 
 // Convert em to pixels using fromContext.
-// em(s) are relative to the font-size at the same node. If you're setting an em on a node whose font-size
+// em(s) are relative to the font-size at the same element. If you're setting an em on a element whose font-size
 // is different than the base font size, you'll need to pass that font-size as the third parameter.
 // Or just use rem instead which sizes everything relative to the base node.
 convert('1em', 'px', '14px')
