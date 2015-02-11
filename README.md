@@ -4,6 +4,8 @@ Convert between css lengths e.g. em->px or px->rem
 Conversions between em, ex, rem, px are supported. PRs welcome if
 you need support for more esoteric length units.
 
+*[Note: algorithm was originally ported from Compass] (https://github.com/Compass/compass/blob/master/core/stylesheets/compass/typography/_units.scss)*
+
 ## Install
 `npm install convert-css-length`
 
