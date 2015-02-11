@@ -1,0 +1,38 @@
+{
+  "name": "convert-css-length",
+  "description": "Convert between css lengths e.g. em->px or px->rem",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/KyleAMathews/convert-css-length/issues"
+  },
+  "dependencies": {
+    "console-polyfill": "^0.1.2",
+    "parse-unit": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "coffee-script": "^1.9.0",
+    "mocha": "^2.1.0",
+    "mocha-unfunk-reporter": "^0.4.0"
+  },
+  "homepage": "https://github.com/KyleAMathews/convert-css-length",
+  "keywords": [
+    "css",
+    "css",
+    "length",
+    "convert",
+    "units",
+    "sass",
+    "compass"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyleAMathews/convert-css-length.git"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha -w --recursive --compilers coffee:coffee-script/register -R mocha-unfunk-reporter"
+  }
+}
