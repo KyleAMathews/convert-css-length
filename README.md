@@ -25,10 +25,10 @@ convert('1rem', 'px');
 convert('30px', 'em');
 // ---> 1.875em
 
-// Convert em to pixels using fromContext (1em is relative to the
-// font-size of its element so if using converting from em
-// (btw, rem is awesome and completely solves this problem) you need to
-// set the font-size of element you're converting from.).
+// Convert em to pixels using fromContext.
+// em(s) are relative to the font-size at the same node. If you're setting an em on a node whose font-size
+// is different than the base font size, you'll need to pass that font-size as the third parameter.
+// Or just use rem instead which sizes everything relative to the base node.
 convert('1em', 'px', '14px')
 // ---> 14px
 ```
