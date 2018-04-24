@@ -13,8 +13,10 @@
   "devDependencies": {
     "chai": "^1.10.0",
     "coffee-script": "^1.9.0",
+    "microbundle": "^0.4.4",
     "mocha": "^2.1.0",
-    "mocha-unfunk-reporter": "^0.4.0"
+    "mocha-unfunk-reporter": "^0.4.0",
+    "prettier": "^1.12.1"
   },
   "homepage": "https://github.com/KyleAMathews/convert-css-length",
   "keywords": [
@@ -27,12 +29,14 @@
     "compass"
   ],
   "license": "MIT",
+  "source": "src/index.js",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/KyleAMathews/convert-css-length.git"
   },
   "scripts": {
-    "test": "NODE_ENV=test node_modules/.bin/mocha -w --recursive --compilers coffee:coffee-script/register -R mocha-unfunk-reporter"
+    "build": "microbundle",
+    "format": "prettier --write src/index.js"
   }
 }
