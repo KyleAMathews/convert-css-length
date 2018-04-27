@@ -36,6 +36,7 @@
     "url": "https://github.com/KyleAMathews/convert-css-length.git"
   },
   "scripts": {
+    "test": "mocha test/index.js",
     "build": "microbundle",
     "format": "prettier --write src/index.js"
   }
