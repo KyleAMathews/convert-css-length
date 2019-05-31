@@ -3,10 +3,8 @@
  * DS102: Remove unnecessary code created because of implicit returns
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/master/docs/suggestions.md
  */
-const chai = require('chai');
-const { expect } = chai;
-
-const convertCSSLength = require('../src/index');
+import { expect } from 'chai';
+import convertCSSLength from '../src/index';
 
 const convertLength = convertCSSLength('16px');
 
