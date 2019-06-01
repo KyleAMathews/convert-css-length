@@ -7,7 +7,7 @@
 // Ported from Compass
 // https://github.com/Compass/compass/blob/master/core/stylesheets/compass/typography/_units.scss
 
-const parseUnit = require("parse-unit")
+import parseUnit from "parse-unit"
 
 const baseFontSize = "16px"
 
@@ -34,7 +34,7 @@ const unitLess = length => parseUnit(length)[0]
 //   For converting to relative units, the absolute length in px to which the
 //   output value will refer. Defaults to the same as fromContext, since it is
 //   rarely needed.
-module.exports = function(baseFontSize) {
+export default function convertCSSLength(baseFontSize) {
   if (baseFontSize == null) {
     baseFontSize = baseFontSize
   }

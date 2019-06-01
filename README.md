@@ -11,7 +11,7 @@ you need support for more esoteric length units.
 
 ## Usage
 ```javascript
-var convertLength = require('convert-css-length');
+import convertLength from 'convert-css-length';
 
 // Set the baseFontSize for your project. Defaults to 16px (also the
 // browser default).
