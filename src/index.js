@@ -7,15 +7,13 @@
 // Ported from Compass
 // https://github.com/Compass/compass/blob/master/core/stylesheets/compass/typography/_units.scss
 
-import parseUnit from "parse-unit"
+// Emulate the sass function "unit"
+import unit from "./unit"
 
 const baseFontSize = "16px"
 
-// Emulate the sass function "unit"
-const unit = length => parseUnit(length)[1]
-
 // Emulate the sass function "unitless"
-const unitLess = length => parseUnit(length)[0]
+const unitLess = length => parseFloat(length)
 
 // Convert any CSS <length> or <percentage> value to any another.
 //
