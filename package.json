@@ -1,7 +1,7 @@
 {
   "name": "convert-css-length",
   "description": "Convert between css lengths e.g. em->px or px->rem",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
     "url": "https://github.com/KyleAMathews/convert-css-length/issues"
