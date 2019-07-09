@@ -37,6 +37,7 @@
   "scripts": {
     "test": "mocha -r esm test/*.js",
     "build": "microbundle",
+    "publish-patch": "npm run build && npm version patch && npm publish",
     "format": "prettier --write src/index.js"
   }
 }
